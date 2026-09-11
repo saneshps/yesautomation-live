@@ -59,7 +59,7 @@
 					<div style="text-align:center;">
 						<img src="./images/404.jpg" width="40%" />
 						<div style="margin-bottom: 10px ;">
-							<a href="http://yesautomation.ae">Back to homepage</a>
+							<a href="https://yesautomation.ae">Back to homepage</a>
 						</div>
 					</div>
 				</div>

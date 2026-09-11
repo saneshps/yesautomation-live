@@ -4,14 +4,14 @@
 		<div class="row">
 			<div class="col-md-3 col-sm-6">
 				<h3><span>Our</span> Links</h3>
-					<a href="#"><p>Rentals</p></a>
+					<a href="../rental.php"><p>Rentals</p></a>
 					<a href="../service-repair.php"><p>Services & Repairs</p></a>
 					<a href="../about.php"><p>Our Story</p></a>
 					<a href="../trusted.php"><p>Trusted By</p></a>
 					<a href="../news.php"><p>News & Resources</p></a>
 					<a href="../contact.php"><p>Contact us</p></a>
 					<a href="../privacy-policy.php"><p>Privacy Policy</p></a>
-					 <a  href="blogs.php" target="blank"><p>Blogs</p></a>
+					 <a  href="../blogs.php"><p>Blogs</p></a>
 			</div>
 
 
@@ -58,7 +58,7 @@
 			<section id="back">
 				<div class="container-fluid">
 					<div class="col-md-7 col-sm-9">
-						<p>© 2021  <span>YesAutomation.ae</span> All rights reserved.  Powered By  <a href="http://bigleap.ae/" target="blank"><span>Big Leap</span></a></p>
+						<p>© 2025  <span>YesAutomation.ae</span> All rights reserved.  Powered By  <a href="http://bigleap.ae/" target="blank"><span>Big Leap</span></a></p>
 							</div>
 
 						<div class="col-md-5 col-sm-3">				

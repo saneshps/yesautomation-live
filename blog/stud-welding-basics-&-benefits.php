@@ -12,7 +12,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Assistant" rel="stylesheet">
 
 	
-	<link rel="canonical" href="http://yesautomation.ae/blog/stud-welding-basics-&-benefits.php" />
+	<link rel="canonical" href="https://www.yesautomation.ae/blog/stud-welding-basics-&-benefits.php" />
 <meta property="og:locale" content="en_US" />
 <meta property="og:type" content="article" />
 <meta property="og:title" content="Check out the basics & benefits of stud welding - Yes Automation" />

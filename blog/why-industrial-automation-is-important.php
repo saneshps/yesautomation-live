@@ -12,7 +12,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Assistant" rel="stylesheet">
 
 	
-	<link rel="canonical" href="http://yesautomation.ae/blog/why-industrial-automation-is-important.php" />
+	<link rel="canonical" href="https://www.yesautomation.ae/blog/why-industrial-automation-is-important.php" />
 <meta property="og:locale" content="en_US" />
 <meta property="og:type" content="article" />
 <meta property="og:title" content="Why Industrial Automation is Important - Yes Automation" />

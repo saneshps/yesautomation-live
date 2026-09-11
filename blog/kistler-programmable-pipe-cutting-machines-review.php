@@ -11,7 +11,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="https://fonts.googleapis.com/css?family=Assistant" rel="stylesheet">
 
-		<link rel="canonical" href="http://yesautomation.ae/blog/kistler-programmable-pipe-cutting-machines-review.php" />
+		<link rel="canonical" href="https://www.yesautomation.ae/blog/kistler-programmable-pipe-cutting-machines-review.php" />
 <meta property="og:locale" content="en_US" />
 <meta property="og:type" content="article" />
 <meta property="og:title" content="Kistler Programmable Pipe cutting machines: Review" />

@@ -1,8 +1,9 @@
 <?php
-include_once('dbconnect.php'); 
+include_once('dbconnect.php');
 
 // get cities
-function getEmirates(){
+function getEmirates()
+{
     global $db;
 
     // Cities
@@ -12,7 +13,7 @@ function getEmirates(){
     $emirates = [];
     if ($cresult->num_rows > 0) {
         // output data of each row
-        while($row = $cresult->fetch_assoc()) {
+        while ($row = $cresult->fetch_assoc()) {
             $emirates[$row['short_code']] = $row['name'];
         }
     }
@@ -20,25 +21,26 @@ function getEmirates(){
 }
 
 // Get questions
-function getQuestions($modal){
+function getQuestions($modal)
+{
     global $db;
 
     $sql = "SELECT c.*, q.id as quesid, q.question FROM ya_categories as c
             LEFT JOIN ya_questions as q ON q.category_id = c.id            
-            WHERE c.name LIKE '".$modal."'";
+            WHERE c.name LIKE '" . $modal . "'";
     $result = $db->query($sql);
-    
+
     $product = [];
     if ($result->num_rows > 0) {
         // output data of each row
         $questions = [];
-        while($row = $result->fetch_assoc()) {
-            if(empty($product)){
+        while ($row = $result->fetch_assoc()) {
+            if (empty($product)) {
                 $product = ['category_id'   => $row['id']];
             }
             $questions[$row['quesid']] = $row['question'];
         }
-        if(!empty($questions)){
+        if (!empty($questions)) {
             $product['questions'] = $questions;
         }
     }
@@ -47,7 +49,8 @@ function getQuestions($modal){
 }
 
 // User Insert
-function insertUser($request){
+function insertUser($request)
+{
     global $db;
 
     $name = $request['name'];
@@ -56,22 +59,22 @@ function insertUser($request){
     $created = date("Y-m-d h:i:s");
 
     $user = [];
-    $sql = "SELECT * FROM `ya_users` WHERE `email` = '".$email."'";
-    if($result = $db->query($sql)) {
+    $sql = "SELECT * FROM `ya_users` WHERE `email` = '" . $email . "'";
+    if ($result = $db->query($sql)) {
         $user = $result->fetch_object();
     }
     $userid = 0;
-    if(empty($user)){// not exists
-       
+    if (empty($user)) { // not exists
+
         $insql = "INSERT INTO `ya_users`( `name`, `email`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`) 
     VALUES ('$name', '$email', null, '$password', null, '$created', '$created')";
 
         if ($db->query($insql) === TRUE) {
             $userid = $db->insert_id;
-        }else{
-            die ($db->error);
+        } else {
+            die($db->error);
         }
-    }else{ // exists
+    } else { // exists
         $userid = $user->id;
     }
 
@@ -79,7 +82,8 @@ function insertUser($request){
 }
 
 // Customer Insert
-function insertCustomer($request, $userid){
+function insertCustomer($request, $userid)
+{
     global $db;
 
     $company = $request['company'];
@@ -88,20 +92,20 @@ function insertCustomer($request, $userid){
     $created = date("Y-m-d h:i:s");
 
     $customer = [];
-    $sql = "SELECT * FROM `ya_customers` WHERE `company` LIKE '$company' AND `user_id` =".$userid;
-    if($result = $db->query($sql)) {
+    $sql = "SELECT * FROM `ya_customers` WHERE `company` LIKE '$company' AND `user_id` =" . $userid;
+    if ($result = $db->query($sql)) {
         $customer = $result->fetch_object();
     }
 
     $customerid = 0;
-    if(empty($customer)){// not exists
+    if (empty($customer)) { // not exists
         $insql = "INSERT INTO `ya_customers`(`company`, `user_id`, `phone`, `city`, `status`, `created_at`, `updated_at`) 
         VALUES ('$company', '$userid', '$phone', '$city', 1, '$created', '$created')";
 
         if ($db->query($insql) === TRUE) {
             $customerid = $db->insert_id;
-        } 
-    }else{ // exists
+        }
+    } else { // exists
         $customerid = $customer->id;
     }
 
@@ -109,16 +113,17 @@ function insertCustomer($request, $userid){
 }
 
 // Request Quotation
-function quoteRequest($request, $customerid){
+function quoteRequest($request, $customerid)
+{
 
     global $db;
 
     $category       = $request['category_id'];
     $delivery       = $request['delivery_method'];
-    $technician     = (isset($request['is_technician']) == true)? 1: 0;   
+    $technician     = (isset($request['is_technician']) == true) ? 1 : 0;
     $remarks        = $request['remarks'];
     $rentalfrom     = $request['rental_from'];
-    $rentalto       = $request['rental_to'];  
+    $rentalto       = $request['rental_to'];
     $durationfrom   = $request['duration_from'];
     $durationto     = $request['duration_to'];
     $created        = date("Y-m-d h:i:s");
@@ -127,34 +132,36 @@ function quoteRequest($request, $customerid){
     $insql = "INSERT INTO `ya_quote_requests`(`customer_id`, 
   `category_id`, `rental_start`,`rental_end`, `delivery_method`, `is_technician`, `tech_from`, `tech_to`,`remarks`, `status`, `created_at`, `updated_at`) 
     VALUES ($customerid, $category, '$rentalfrom', '$rentalto' , '$delivery', $technician, '$durationfrom', '$durationto', '$remarks',1,'$created','$created')";
-  
+
     if ($db->query($insql) === TRUE) {
         $quotereqid = $db->insert_id;
-    } 
+    }
 
     return $quotereqid;
 }
 
 // Quote questions
-function quoteQuestions($request, $quotereqid){
+function quoteQuestions($request, $quotereqid)
+{
     global $db;
 
     $ques = [];
-    if(isset($request['answers']) && !empty($request['answers'])){
-        foreach($request['answers'] as $qid => $answer){
+    if (isset($request['answers']) && !empty($request['answers'])) {
+        foreach ($request['answers'] as $qid => $answer) {
             $insql = "INSERT INTO `ya_quote_questions`(`quote_req_id`, `question_id`, `answer`) 
             VALUES ($quotereqid, $qid, '$answer')";
-          
+
             if ($db->query($insql) === TRUE) {
                 $ques[] = $db->insert_id;
-            } 
+            }
         }
     }
     return $ques;
 }
 
 // send notification mail to the team
-function sendNotification($request){
+function sendNotification($request)
+{
     global $db;
 
     // $sql = "SELECT * FROM ya_settings WHERE option_name ='email_copy_to' ";
@@ -164,7 +171,7 @@ function sendNotification($request){
     //     echo 'Could not run query: ';
     //     exit;
     // }
-    
+
     // $settings = $row->fetch();
     // $to = $settings->option_value;
     $to = "sales@yesautomation.ae";
@@ -178,24 +185,23 @@ function sendNotification($request){
     // }    
     // $cat = $catRow->fetch();
     // $category = $cat->name;
-   
+
     $category = '';
     $subject = "Notification for new quote";
-    
+
     $message = "<b>Dear Team,</b>";
-    $message .= "<p>There is one enquiry from ".$request['company']." for a product ". $category ."</p>";
-    
-    $header = "From:".$request['email']." \r\n";
+    $message .= "<p>There is one enquiry from " . $request['company'] . " for a product " . $category . "</p>";
+
+    $header = "From:" . $request['email'] . " \r\n";
     //$header .= "Cc:afgh@somedomain.com \r\n";
     $header .= "MIME-Version: 1.0\r\n";
     $header .= "Content-type: text/html\r\n";
-    
-    $retval = mail ($to,$subject,$message,$header);
-    
-    if( $retval == true ) {
-       return "Message sent successfully...";
-    }else {
-       return "Message could not be sent...";
+
+    $retval = mail($to, $subject, $message, $header);
+
+    if ($retval == true) {
+        return "Message sent successfully...";
+    } else {
+        return "Message could not be sent...";
     }
 }
-?>

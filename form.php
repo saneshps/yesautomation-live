@@ -10,7 +10,7 @@ if (isset($_POST['Submit'])) {
         'X-Mailer: PHP/' . phpversion();
 
 
-    $to = "kavya@yesautomation.ae";
+    $to = "sales@yesautomation.ae";
     $subject = "Express Interests - " . $variable1;
     $msg = "You have received an express interest of the product " . $variable1;
 

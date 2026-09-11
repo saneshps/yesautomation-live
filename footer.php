@@ -3,7 +3,7 @@
 		<div class="row">
 			<div class="col-md-3 col-sm-6">
 				<h3><span>Our</span> Links</h3>
-				<a href="#">
+				<a href="rental.php">
 					<p>Rentals</p>
 				</a>
 				<a href="service-repair.php">
@@ -24,7 +24,7 @@
 				<a href="privacy-policy.php">
 					<p>Privacy Policy</p>
 				</a>
-				<a href="blogs.php" target="blank">
+				<a href="blogs.php">
 					<p>Blogs</p>
 				</a>
 			</div>
@@ -37,7 +37,7 @@
 				<p>UM LAOB REGION,<br> PLOT NO. 1628</p>
 				<p>UMM AL QUWAIN, UAE</p>
 				<p>&nbsp;</p>
-				<p>TEL : <a href="tel:97165264382" target="_blank">+971 6 526 4382</a></p>
+			    <p>TEL : <a href="tel:97165264382" target="_blank"> +971 6 526 4382 </a></p>
 				<p>FAX : +971 6 526 4384</p>
 
 			</div>
@@ -45,12 +45,12 @@
 
 			<div class="col-md-3 col-sm-6">
 				<h3><span>Get In</span> Touch</h3>
-				<img src="images/anjali.png" class="img-responsive" alt="Yes Automation">
+				<img src="images/Shafna-Ashraf.png" class="img-responsive" alt="Yes Automation">
 
-				<h3>Anjali Roy</h3>
-				<p>Sales Coordinator</p>
+				<h3> Shafna Ashraf </h3>
+				<p> Sales Associate  </p>
 
-				<p>MOB : <a href="tel:971502118507" target="_blank">+971 50 211 8507</a></p>
+				<p>MOB : <a href="tel:'971565388502" target="_blank"> +971 56 538 8502 </a></p>
 				<p>Mail : <a href="mailto:sales@yesautomation.ae">sales@yesautomation.ae</a></p>
 			</div>
 			<div class="col-md-3 col-sm-6 lo-fo">
@@ -65,18 +65,31 @@
 		</div>
 
 	</div>
+	
+	<!-- Phone -->
+	<div class="phone-icon">
+		<a href="tel:+971565388502"> <img src="./images/phone-call.png" alt="phone"> </a>
+	</div>
+	<!-- Phone -->
+    <!-- WhatsApp -->
+    <div class="whatsapp-icon">
+        <a href="https://api.whatsapp.com/send?phone=+971508993781&text=Hello YES Automation!." target="_blank">
+            <img src="./images/whatsapp.png" alt="WhatsApp">
+        </a>
+    </div>
+    <!-- WhatsApp -->
 
 </section>
 
 
-<div id="rated-main"> 
-  
+<div id="rated-main">
+
 	<div id="back">
 		<div class="container-fluid">
 			<div class="col-md-7 col-sm-9">
-				 
-				<p>© 2021 <span>YesAutomation.ae</span> All rights reserved. Powered By <a href="http://bigleap.ae/" target="blank"><span>Big Leap</span></a></p>
-			  
+
+				<p>© 2026 <span>YES Automation</span> All rights reserved. Powered By <a href="https://bigleap.ae/" target="blank"><span>Big Leap</span></a></p>
+
 			</div>
 
 			<div class="col-md-5 col-sm-3">
@@ -89,21 +102,28 @@
 		</div>
 	</div>
 </div>
+
+
+
+
+
 <!-- Bothelp.io widget -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+
 <script>
 	! function() {
-		var e = {
-				"token": "971502118507",
-				"position": "right",
-				"bottomSpacing": "30",
-				"callToActionMessage": "Talk to Us",
-				"displayOn": "everywhere",
-				"subtitle": "Machines for Rental",
-				"message": {
-					"name": "YesAutomation",
-					"content": "Hey! Which machine you are looking for rental?"
-				}
-			},
+// 		var e = {
+// 				"token": "971508993781",
+// 				"position": "right",
+// 				"bottomSpacing": "30",
+// 				"callToActionMessage": "Talk to Us",
+// 				"displayOn": "everywhere",
+// 				"subtitle": "Machines for Rental",
+// 				"message": {
+// 					"name": "YesAutomation",
+// 					"content": "Hello from YES Automation!"
+// 				}
+// 			},
 			t = document.location.protocol + "//bothelp.io",
 			o = document.createElement("script");
 		o.type = "text/javascript", o.async = !0, o.src = t + "/widget-folder/widget-whatsapp-chat.js", o.onload = function() {
@@ -112,5 +132,5 @@
 		var n = document.getElementsByTagName("script")[0];
 		n.parentNode.insertBefore(o, n)
 	}();
-</script>
+</script>  
 <!-- /Bothelp.io widget -->

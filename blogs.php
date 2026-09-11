@@ -4,10 +4,6 @@
 
 <head>
 
-
-
-
-
 	<title>Yes Automation Blogs | UAE | Dubai</title>
 
 	<link rel="shortcut icon" href="images/favicon.png">
@@ -20,10 +16,6 @@
 
 	<link href="https://fonts.googleapis.com/css?family=Assistant" rel="stylesheet">
 
-
-
-
-
 	<link rel="stylesheet" href="main/bootstrap.min.css">
 
 	<link rel="stylesheet" href="main/layout.css">
@@ -33,7 +25,9 @@
 	<link rel="stylesheet" href="main/about.css">
 	<link rel="stylesheet" href="slider/skdslider.css">
 
-
+   <!-- canonical -->
+   <link href="https://www.yesautomation.ae/blogs.php" rel="canonical">
+    <!--// canonical -->
 
 	<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
@@ -53,7 +47,7 @@
 
 
 
-<a href="https://api.whatsapp.com/send?phone=+971508993781&amp;text=Hey%20there!%20I%20woud%20like%20to%20know%20more%20about%20your%20products." class="float" target="_blank">
+<a href="https://api.whatsapp.com/send?phone=+971508993781&amp;text=Hey%20there!%20I%20woud%20like%20to%20know%20more%20about%20your%20products." class="float" >
 
 <i class="fa fa-whatsapp my-float"></i>
 
@@ -63,13 +57,6 @@
 
 	<?php $page = 'blog';
 	include 'header.php'; ?>
-
-
-
-
-
-
-
 
 
 	<section id="about-banner">
@@ -89,27 +76,423 @@
 
 	</section>
 
-
-
-
-
 	<section id="blog">
 
 		<div class="container-fluid">
 
-
-
 			<div class="row">
-
 
 
 				<div class="col-md-9 col-sm-12 col-xs-12">
 
 					<div class="row blog-first">
-					
-					<div class="col-md-4 col-sm-6 col-xs-12">
+					    
+					    <div class="col-md-4 col-sm-6 col-xs-12">
 
-							<a href="blog/steps-implement-hygiene-principles-in-industries.php" target="_blank">
+							<a href="blog/solar-panel-installation-vacuum-lifters.php">
+
+								<figure><img src="../images/blog/solar-panel-installation-vacuum-lifters.webp" alt="solar-panel-installation-vacuum-lifters"></figure>
+
+								<h2>  Common Challenges in Solar Panel Installation and How Vacuum Glass Lifters Solve Them </h2>
+							</a>
+						</div>
+					    
+					    	<div class="col-md-4 col-sm-6 col-xs-12">
+
+							<a href="blog/arc-welding-machine-rental-checklist.php" >
+
+								<figure><img src="../images/blog/arc-welding-machine-rental-checklist.webp" alt="arc-welding-machine-rental-checklist"></figure>
+
+								<h2>   Arc Welding Machine Rental Checklist: 10 Things to
+								Verify Before You Rent </h2>
+							</a>
+						</div>
+					    
+					    	<div class="col-md-4 col-sm-6 col-xs-12">
+
+							<a href="blog/how-to-choose-the-perfect-arc-welding-machine.php" >
+
+								<figure><img src="../images/blog/how-to-choose-the-perfect-arc-welding-machine.webp" alt="how-to-choose-the-perfect-arc-welding-machine"></figure>
+
+								<h2>   How to Choose the Perfect Arc Welding
+								Machine for Your Project </h2>
+							</a>
+						</div>
+						
+					    
+					    	<div class="col-md-4 col-sm-6 col-xs-12">
+
+							<a href="blog/viavac-cb4-rental-case-study-abu-dhabi.php" >
+
+								<figure><img src="../images/blog/viavac-cb4-rental-case-study-abu-dhabi.webp" alt="viavac-cb4-rental-case-study-abu-dhabi"></figure>
+
+								<h2>  Case Study: Successful Rental Delivery
+and Operator Training for the Viavac
+CB4 Sandwich Panel Lifter in Abu Dhabi </h2>
+							</a>
+						</div>
+					    
+					    	<div class="col-md-4 col-sm-6 col-xs-12">
+
+							<a href="blog/best-vacuum-cleaner-rentals-for-industrial-commercial-cleaning-uae.php" >
+
+								<figure><img src="../images/blog/best-vacuum-cleaner-rentals-for-industrial-commercial-cleaning-uae.webp" alt="Best Vacuum Cleaner Rentals for
+Industrial & Commercial Cleaning in UAE"></figure>
+
+								<h2> Best Vacuum Cleaner Rentals for
+								Industrial & Commercial Cleaning in UAE </h2>
+							</a>
+						</div>
+						<div class="col-md-4 col-sm-6 col-xs-12">
+
+							<a href="blog/industrial-vacuum-cleaners-and-their-applications.php" >
+
+								<figure><img src="../images/blog/understanding-industrial-vacuum-cleaners-and-their-applications.webp" alt="Understanding Industrial Vacuum Cleaners and Their Applications"></figure>
+
+								<h2> Understanding Industrial Vacuum Cleaners and Their Applications </h2>
+							</a>
+						</div>
+					    
+					    <div class="col-md-4 col-sm-6 col-xs-12">
+
+							<a href="blog/mobile-strapping-machine-rental-benefits.php" >
+
+								<figure><img src="../images/blog/ergonomic-pallet-strapping-why-renting-a-mobile-strapping-machine-is-a-cost-effective-solution.webp" alt="Ergonomic Pallet Strapping: Why Renting a Mobile Strapping Machine Is a Cost-Effective Solution"></figure>
+
+								<h2> Ergonomic Pallet Strapping: Why Renting a Mobile Strapping Machine Is a Cost-Effective Solution </h2>
+							</a>
+						</div>
+
+						<div class="col-md-4 col-sm-6 col-xs-12">
+
+							<a href="blog/types-of-welding-machines-and-rental-benefits.php" >
+
+								<figure><img src="../images/blog/types-of-welding-machines-and-rental-benefits.webp" alt="the-ultimate-guide-to-types-of-welding-machines-and-why-renting-is-the-smart-choice"></figure>
+
+								<h2> The Ultimate Guide to Types of Welding Machines and Why Renting Is a SmartChoice </h2>
+							</a>
+						</div>
+
+						<div class="col-md-4 col-sm-6 col-xs-12">
+
+							<a href="blog/hot-vs-cold-water-pressure-washer-when-to-use.php" >
+
+								<figure><img src="../images/blog/hot-vs-cold-water-pressure-washer-when-to-use.png" alt="hot-vs-cold-water-pressure-washer-when-to-use"></figure>
+
+								<h2>When Should You Use a Hot or Cold Water Pressure Washer
+
+								</h2>
+							</a>
+						</div>
+
+						<div class="col-md-4 col-sm-6 col-xs-12">
+
+							<a href="blog/stud-welding-rental-uae-guide.php" >
+
+								<figure><img src="../images/blog/stud-welding-rental-uae-guide.jpeg" alt="stud-welding-rental-uae-guide"></figure>
+
+								<h2>Stud Welding Rental in UAE: A Complete Guide
+
+								</h2>
+							</a>
+						</div>
+
+						<div class="col-md-4 col-sm-6 col-xs-12">
+
+							<a href="blog/renting-pressure-washer-for-tough-cleaning-jobs.php" >
+
+								<figure><img src="../images/blog/renting-pressure-washer-for-tough-cleaning-jobs.jpeg" alt="renting-pressure-washer-for-tough-cleaning-jobs"></figure>
+
+								<h2>Renting a Pressure Washer: The Smart Way to Tackle Tough Cleaning Jobs
+
+								</h2>
+							</a>
+						</div>
+
+						<div class="col-md-4 col-sm-6 col-xs-12">
+
+							<a href="blog/pipe-beveling-equipment-rental-guide.php" >
+
+								<figure><img src="../images/blog/a-complete-guide-to-renting-pipe-beveling-equipment-for-industrial-projects.jpeg" alt="a-complete-guide-to-renting-pipe-beveling-equipment-for-industrial-projects"></figure>
+
+								<h2>A Complete Guide to Renting Pipe Beveling Equipment for Industrial Projects
+								</h2>
+							</a>
+						</div>
+
+						<div class="col-md-4 col-sm-6 col-xs-12">
+
+							<a href="blog/how-vacuum-glass-lifters-improve-efficiency-in-solar-panel-installation.php" >
+
+								<figure><img src="../images/blog/how-vacuum-glass-lifters-improve-efficiency-in-solar-panel-installation.jpg" alt="how-vacuum-glass-lifters-improve-efficiency-in-solar-panel-installation"></figure>
+
+								<h2>How Vacuum Glass Lifters Improve Efficiency in Solar Panel Installation
+								</h2>
+							</a>
+						</div>
+
+						<div class="col-md-4 col-sm-6 col-xs-12">
+
+							<a href="blog/why-renting-carpet-cleaning-machines-is-the-best-choice.php" >
+
+								<figure><img src="../images/blog/why-renting-carpet-cleaning-machines-is-the-best-choice.jpg" alt="why-renting-carpet-cleaning-machines-is-the-best-choice"></figure>
+
+								<h2>Why Renting Carpet Cleaning Machines Is the Best
+									Choice for UAE Homes & Offices
+
+								</h2>
+
+							</a>
+
+						</div>
+						<div class="col-md-4 col-sm-6 col-xs-12">
+
+							<a href="blog/benefits-of-automatic-pool-cleaning-robots-for-short-term-and-long-term-rental.php" >
+
+								<figure><img src="../images/blog/benefits-of-automatic-pool-cleaning-robots-for-short-term-and-long-term-rental.jpg" alt="benefits-of-automatic-pool-cleaning-robots-for-short-term-and-long-term-rental"></figure>
+
+								<h2>Top Benefits of Automatic Pool Cleaning
+									Robots for Short-Term and Long-Term Rental
+
+								</h2>
+
+							</a>
+
+						</div>
+
+						<div class="col-md-4 col-sm-6 col-xs-12">
+
+							<a href="blog/why-buy-when-you-can-rent-vacuum-lifters-to-save-cost.php" >
+
+								<figure><img src="../images/blog/why-buy-when-you-can-rent-how-vacuum-lifter-rentals-slash-your-costs.jpg" alt="Why Buy When You Can Rent? How Vacuum Lifter Rentals Slash Your Costs"></figure>
+
+								<h2>Why Buy When You Can Rent? How Vacuum Lifter Rentals Slash Your Costs?
+
+								</h2>
+
+							</a>
+
+						</div>
+						<div class="col-md-4 col-sm-6 col-xs-12">
+
+							<a href="blog/cut-costs-the-smarter-way-rent-arc-welding-machines-instead-of-buying.php" >
+
+								<figure><img src="../images/blog/cut-costs-the-smarter-way-rent-arc-welding-machines-instead-of-buying.jpg" alt="Cut Costs the Smarter Way: Rent Arc Welding Machines Instead of Buying"></figure>
+
+								<h2>Cut Costs the Smarter Way: Rent Arc Welding Machines Instead of Buying | YES Automation
+								</h2>
+
+							</a>
+
+						</div>
+						<div class="col-md-4 col-sm-6 col-xs-12">
+
+							<a href="blog/maintenance-tips-for-rented-pipe-beveling-equipment.php" >
+
+								<figure><img src="../images/blog/maintenance-tips-for-rented-pipe-beveling-equipment.jpg" alt="maintenance-tips-for-rented-pipe-beveling-equipment"></figure>
+
+								<h2>Maintenance Tips for Rented Pipe Beveling Equipment | YES Automation
+								</h2>
+
+							</a>
+
+						</div>
+
+						<div class="col-md-4 col-sm-6 col-xs-12">
+
+							<a href="blog/why-renting-pipe-cutting-machines-is-smarter-than-buying-in-2025.php" >
+
+								<figure><img src="../images/blog/why-renting-pipe-cutting-machines-is-smarter-than-buying-in-2025.jpg" alt="Why Renting Pipe Cutting Machines Is Smarter Than Buying in 2025 | Yes Automation"></figure>
+
+								<h2>Why Renting Pipe Cutting Machines Is Smarter Than Buying in 2025 | Yes Automation
+								</h2>
+
+							</a>
+
+						</div>
+						<div class="col-md-4 col-sm-6 col-xs-12">
+
+							<a href="blog/advantages-of-renting-stud-welding-machines.php" >
+
+								<figure><img src="../images/blog/advantages-of-renting-stud-welding-machines.jpg" alt="Advantages of Renting Stud Welding Machines"></figure>
+
+								<h2>Advantages of Renting Stud Welding Machines</h2>
+
+							</a>
+
+						</div>
+
+						<div class="col-md-4 col-sm-6 col-xs-12">
+
+							<a href="blog/best-practices-for-using-welding-rotators.php" >
+
+								<figure><img src="../images/blog/best-practices-for-using-welding-rotators.jpg" alt="Best Practices for Using Welding Rotators"></figure>
+
+								<h2>Best Practices for Using Welding Rotators</h2>
+
+							</a>
+
+						</div>
+
+						<div class="col-md-4 col-sm-6 col-xs-12">
+
+							<a href="blog/difference-between-stud-welding-and-stick-welding.php" >
+
+								<figure><img src="../images/blog/difference-between-stud-welding-and-stick-welding.jpg" alt="Difference Between Stud Welding and Stick Welding"></figure>
+
+								<h2>Difference Between Stud Welding and Stick Welding</h2>
+
+							</a>
+
+						</div>
+
+						<div class="col-md-4 col-sm-6 col-xs-12">
+
+							<a href="blog/mistakes-avoid-choosing-rental-services-dubai.php" >
+
+								<figure><img src="../images/blog/mistakes-avoid-choosing-rental-services-dubai.jpg" alt="Mistakes to Avoid When Choosing Rental Services in Dubai"></figure>
+
+								<h2>Mistakes to Avoid When Choosing Rental Services in Dubai</h2>
+
+							</a>
+
+						</div>
+
+						<div class="col-md-4 col-sm-6 col-xs-12">
+
+							<a href="blog/hot-vs-cold-industrial-pressure-washers-which-is-better.php" >
+
+								<figure><img src="../images/blog/hot-vs-cold-industrial-pressure-washers-which-is-better.jpg" alt="Hot vs Cold Industrial Pressure Washers: Which is Better?"></figure>
+
+								<h2>Hot vs Cold Industrial Pressure Washers: Which is Better?</h2>
+
+							</a>
+
+						</div>
+
+						<div class="col-md-4 col-sm-6 col-xs-12">
+
+							<a href="blog/the-role-of-glass-lifters-in-sustainable-construction-practices.php" >
+
+								<figure><img src="../images/blog/the-role-of-glass-lifters-in-sustainable-construction-practices.jpg" alt="The Role of Glass Lifters in Sustainable Construction Practices"></figure>
+
+								<h2>The Role of Glass Lifters in Sustainable Construction Practices</h2>
+
+							</a>
+
+						</div>
+
+						<div class="col-md-4 col-sm-6 col-xs-12">
+
+							<a href="blog/pressure-washing-wrote-iron-tips-for-you.php" >
+
+								<figure><img src="../images/blog/pressure-washing-wrote-iron-tips-for-you.jpg" alt="Pressure Washing Wrote Iron? Tips for you"></figure>
+
+								<h2>Pressure Washing Wrote Iron? Tips for you</h2>
+
+							</a>
+
+						</div>
+
+						<div class="col-md-4 col-sm-6 col-xs-12">
+
+							<a href="blog/pros-and-cons-professional-carpet-cleaner-vs-renting-machine.php" >
+
+								<figure><img src="../images/blog/pros-and-cons-professional-carpet-cleaner-vs-renting-machine.jpg" alt="Pros & Cons: Professional Carpet Cleaner vs. Renting Machine"></figure>
+
+								<h2>Pros & Cons: Professional Carpet Cleaner vs. Renting Machine</h2>
+
+							</a>
+
+						</div>
+
+						<div class="col-md-4 col-sm-6 col-xs-12">
+
+							<a href="blog/comprehensive-guide-to-choosing-the-perfect-industrial-vacuum-cleaner.php" >
+
+								<figure><img src="../images/blog/comprehensive-guide-to-choosing-the-perfect-industrial-vacuum-cleaner.jpg" alt="A Comprehensive Guide To Choosing The Perfect Industrial Vacuum Cleaner"></figure>
+
+								<h2>A Comprehensive Guide To Choosing The Perfect Industrial Vacuum Cleaner</h2>
+
+							</a>
+
+						</div>
+
+						<div class="col-md-4 col-sm-6 col-xs-12">
+
+							<a href="blog/warehouse-logistics-what-it-is-and-how-to-properly-use-it.php" >
+
+								<figure><img src="../images/blog/warehouse-logistics-what-it-is-and-how-to-properly-use-it.jpg" alt="Warehouse Logistics: What It Is and How to Properly Use It?"></figure>
+
+								<h2>Warehouse Logistics: What It Is and How to Properly Use It?</h2>
+
+							</a>
+
+						</div>
+
+						<div class="col-md-4 col-sm-6 col-xs-12">
+
+							<a href="blog/benefits-tube-and-pipe-laser-cutting-machines-in-metal-cutting-industry.php" >
+
+								<figure><img src="../images/blog/benefits-tube-and-pipe-laser-cutting-machines-in-metal-cutting-industry.jpg" alt="How can I save money with carpet cleaning?"></figure>
+
+								<h2>The Incredible Benefits Of Tube And Pipe Laser Cutting Machines In The Metal Cutting Industry</h2>
+
+							</a>
+
+						</div>
+
+						<div class="col-md-4 col-sm-6 col-xs-12">
+
+							<a href="blog/save-money-with-carpet-cleaning.php" >
+
+								<figure><img src="../images/blog/save-money-with-carpet-cleaning.jpg" alt="How can I save money with carpet cleaning?"></figure>
+
+								<h2>How can I save money with carpet cleaning?</h2>
+
+							</a>
+
+						</div>
+
+						<div class="col-md-4 col-sm-6 col-xs-12">
+
+							<a href="blog/increase-productivity-and-quality-harnessing-the-potential-of-stud-welding-machines.php" >
+
+								<figure><img src="../images/blog/increase-productivity-and-quality-harnessing-the-potential-of-stud-welding-machines.jpg" alt="Increase Quality And Productivity Of Stud Welding Machines"></figure>
+
+								<h2>Increase Productivity and Quality Harnessing the Potential of Stud Welding Machines</h2>
+
+							</a>
+
+						</div>
+
+						<div class="col-md-4 col-sm-6 col-xs-12">
+
+							<a href="blog/is-it-worth-renting-a-carpet-cleaning-machine.php" >
+
+								<figure><img src="../images/blog/is-it-worth-renting-a-carpet-cleaning-machine.jpg" alt="Increase Quality And Productivity Of Stud Welding Machines"></figure>
+
+								<h2>Is It Worth Renting A Carpet Cleaning Machine Instead Of Getting Carpets Professionally Cleaned?</h2>
+
+							</a>
+
+						</div>
+
+						<div class="col-md-4 col-sm-6 col-xs-12">
+
+							<a href="blog/benefits-of-rollers-hire-for-small-businesses-in-uae.php" >
+
+								<figure><img src="../images/blog/benefits-of-rollers-hire-for-small-businesses-in-uae.jpg" alt="The Benefits Of Rollers Hire For Small Businesses In UAE"></figure>
+
+								<h2>The Benefits Of Rollers Hire For Small Businesses In UAE</h2>
+
+							</a>
+
+						</div>
+
+						<div class="col-md-4 col-sm-6 col-xs-12">
+
+							<a href="blog/steps-implement-hygiene-principles-in-industries.php" >
 
 								<figure><img src="../images/blog/steps-implement-hygiene-principles-in-industries.jpg" alt="Man Cleaning-What Are The Steps To Implement Hygiene Principles In Industries?"></figure>
 
@@ -118,10 +501,10 @@
 							</a>
 
 						</div>
-					
-					<div class="col-md-4 col-sm-6 col-xs-12">
 
-							<a href="blog/swiming-pool-cleaning-machines-make-venue-clean-up-easy.php" target="_blank">
+						<div class="col-md-4 col-sm-6 col-xs-12">
+
+							<a href="blog/swiming-pool-cleaning-machines-make-venue-clean-up-easy.php" >
 
 								<figure><img src="../images/blog/swiming-pool-cleaning-machines-make-venue-clean-up-easy.jpg" alt="Cost Effective Welding Solutions"></figure>
 
@@ -133,7 +516,7 @@
 
 						<div class="col-md-4 col-sm-6 col-xs-12">
 
-							<a href="blog/cost-effective-welding-solutions.php" target="_blank">
+							<a href="blog/cost-effective-welding-solutions.php" >
 
 								<figure><img src="../images/blog/cost-effective-welding-solutions.jpg" alt="Cost Effective Welding Solutions"></figure>
 
@@ -145,7 +528,7 @@
 
 						<div class="col-md-4 col-sm-6 col-xs-12">
 
-							<a href="blog/choose-right-swimming-pool-cleaning-machine-for-pool.php" target="_blank">
+							<a href="blog/choose-right-swimming-pool-cleaning-machine-for-pool.php" >
 
 								<figure><img src="../images/blog/choose-right-swimming-pool-cleaning-machine-for-pool.jpg" alt="How to Choose the Right Swimming Pool Cleaning Machine for Your Pool"></figure>
 
@@ -157,7 +540,7 @@
 
 						<div class="col-md-4 col-sm-6 col-xs-12">
 
-							<a href="blog/simple-steps-to-deep-clean-floor.php" target="_blank">
+							<a href="blog/simple-steps-to-deep-clean-floor.php" >
 
 								<figure><img src="../images/blog/simple-steps-to-deep-clean-floor.jpg" alt="Simple Steps To Deep Clean Your Floor "></figure>
 
@@ -169,7 +552,7 @@
 
 						<div class="col-md-4 col-sm-6 col-xs-12">
 
-							<a href="blog/advantages-of-warehouse-floor-cleaning-machine.php" target="_blank">
+							<a href="blog/advantages-of-warehouse-floor-cleaning-machine.php" >
 
 								<figure><img src="../images/blog/advantages-of-warehouse-floor-cleaning-machine.jpg" alt="yesautomation"></figure>
 
@@ -180,7 +563,7 @@
 						</div>
 						<div class="col-md-4 col-sm-6 col-xs-12">
 
-							<a href="blog/pool-cleaning-equipment-cleaning-business.php" target="_blank">
+							<a href="blog/pool-cleaning-equipment-cleaning-business.php" >
 
 								<figure><img src="../images/blog/pool-cleaning-equipment-cleaning-business.jpg" alt="yesautomation"></figure>
 
@@ -191,7 +574,7 @@
 						</div>
 						<div class="col-md-4 col-sm-6 col-xs-12">
 
-							<a href="blog/swimming-pool-cleaning-machine-reviews-facts.php" target="_blank">
+							<a href="blog/swimming-pool-cleaning-machine-reviews-facts.php" >
 
 								<figure><img src="../images/blog/swimming-pool-cleaning-machine-reviews-facts.jpg" alt="yesautomation"></figure>
 
@@ -202,7 +585,7 @@
 						</div>
 						<div class="col-md-4 col-sm-6 col-xs-12">
 
-							<a href="blog/industrial-floor-cleaning-machines-for-floors.php" target="_blank">
+							<a href="blog/industrial-floor-cleaning-machines-for-floors.php" >
 
 								<figure><img src="../images/blog/industrial-floor-cleaning-machines-for-floors.jpg" alt="yesautomation"></figure>
 
@@ -215,7 +598,7 @@
 
 						<div class="col-md-4 col-sm-6 col-xs-12">
 
-							<a href="blog/stud-welding-work-complete-guide.php" target="_blank">
+							<a href="blog/stud-welding-work-complete-guide.php" >
 
 								<figure><img src="../images/blog/stud-welding-work-complete-guide.jpg" alt="stud-welding-work-complete-guide"></figure>
 
@@ -227,7 +610,7 @@
 
 						<div class="col-md-4 col-sm-6 col-xs-12">
 
-							<a href="blog/good-suction-vacuum-cleaners-with-low-power.php" target="_blank">
+							<a href="blog/good-suction-vacuum-cleaners-with-low-power.php" >
 
 								<figure><img src="../images/blog/Good-Suction-Vacuum-Cleaners-With-Low-Power.jpg" alt="yesautomation"></figure>
 
@@ -240,7 +623,7 @@
 
 						<div class="col-md-4 col-sm-6 col-xs-12">
 
-							<a href="blog/why-vacuum-cleaner-over-traditional-cleaning-methods.php" target="_blank">
+							<a href="blog/why-vacuum-cleaner-over-traditional-cleaning-methods.php" >
 
 								<figure><img src="../images/blog/why-vacuum-cleaner-over-traditional-cleaning-methods.jpg" alt="yesautomation"></figure>
 
@@ -252,7 +635,7 @@
 
 						<div class="col-md-4 col-sm-6 col-xs-12">
 
-							<a href="blog/4-safety-tips-before-operating-vacuum-lifting-machine-uae.php" target="_blank">
+							<a href="blog/4-safety-tips-before-operating-vacuum-lifting-machine-uae.php" >
 
 								<figure><img src="../images/blog/safety-tips-before-operating-a-vacuum-lifting-machine.jpg" alt="yesautomation"></figure>
 
@@ -264,7 +647,7 @@
 
 						<div class="col-md-4 col-sm-6 col-xs-12">
 
-							<a href="blog/why-yes-automation-uae.php" target="_blank">
+							<a href="blog/why-yes-automation-uae.php" >
 
 								<figure><img src="../images/blog/why-yes-automation-uae.jpg" alt="yesautomation"></figure>
 
@@ -277,7 +660,7 @@
 
 						<div class="col-md-4 col-sm-6 col-xs-12">
 
-							<a href="blog/advantages-of-almi-block-splitters.php" target="_blank">
+							<a href="blog/advantages-of-almi-block-splitters.php" >
 
 								<figure><img src="../images/blog/advantages-of-almi-block-splitter.jpg" alt="Block cutter for rent"></figure>
 
@@ -290,7 +673,7 @@
 
 						<div class="col-md-4 col-sm-6 col-xs-12">
 
-							<a href="blog/capacitor-discharge-welding-&-its-Importance.php" target="_blank">
+							<a href="blog/capacitor-discharge-welding-&-its-Importance.php" >
 
 								<figure><img src="../images/blog/capacitor-discharge-welding-&-its-Importance.jpg" alt="Capacitor Discharge Welding Machines"></figure>
 
@@ -304,7 +687,7 @@
 
 						<div class="col-md-4 col-sm-6 col-xs-12">
 
-							<a href="blog/welding-rotators-basics-benefits.php" target="_blank">
+							<a href="blog/welding-rotators-basics-benefits.php" >
 
 								<figure><img src="../images/blog/welding-rotators-basics-benefits.jpg" alt="basics and benefits of welding rotators"></figure>
 
@@ -317,7 +700,7 @@
 
 						<div class="col-md-4 col-sm-6 col-xs-12">
 
-							<a href="blog/yes-automation-in-dubai-expo.php" target="_blank">
+							<a href="blog/yes-automation-in-dubai-expo.php" >
 
 								<figure><img src="../images/blog/yes-automation-in-dubai-expo-2020.jpg" alt="yes automation in dubai expo "></figure>
 
@@ -331,7 +714,7 @@
 
 						<div class="col-md-4 col-sm-6 col-xs-12">
 
-							<a href="blog/kistler-programmable-pipe-cutting-machines-review.php" target="_blank">
+							<a href="blog/kistler-programmable-pipe-cutting-machines-review.php" >
 
 								<figure><img src="../images/blog/kistler-programmable-pipe-cutting-machines-review.jpg" alt="Pipe Cutting Rental in UAE "></figure>
 
@@ -345,7 +728,7 @@
 
 						<div class="col-md-4 col-sm-6 col-xs-12">
 
-							<a href="blog/importance-of-cleaning-during-covid-19.php" target="_blank">
+							<a href="blog/importance-of-cleaning-during-covid-19.php" >
 
 								<figure><img src="../images/blog/importance-of-cleaning-during-covid-19.jpg" alt="importance of cleaning during covid 19"></figure>
 
@@ -359,7 +742,7 @@
 
 						<div class="col-md-4 col-sm-6 col-xs-12">
 
-							<a href="blog/stud-welding-basics-&-benefits.php" target="_blank">
+							<a href="blog/stud-welding-basics-&-benefits.php" >
 
 								<figure><img src="../images/blog/stud-welding-basics-&-benefits.jpg" alt="stud welding machine"></figure>
 
@@ -381,7 +764,7 @@
 
 						<div class="col-md-4 col-sm-6 col-xs-12">
 
-							<a href="blog/how-important-is-an-industrial-vacuum-cleaner.php" target="_blank">
+							<a href="blog/how-important-is-an-industrial-vacuum-cleaner.php" >
 
 								<figure><img src="../images/blog/how-important-is-an-industrial-vacuum-cleaner.jpg" alt="industrial vacuum cleaner"></figure>
 
@@ -393,7 +776,7 @@
 
 						<div class="col-md-4 col-sm-6 col-xs-12">
 
-							<a href="blog/why-industrial-automation-is-important.php" target="_blank">
+							<a href="blog/why-industrial-automation-is-important.php" >
 
 								<figure><img src="images/blog/why-industrial-automation-is-important.jpg" alt="Equipment Rental"></figure>
 
@@ -405,7 +788,7 @@
 
 						<div class="col-md-4 col-sm-6 col-xs-12">
 
-							<a href="http://yesautomation.ae/blog/the-benefits-of-glass-lifting-robots.php" target="_blank">
+							<a href="https://yesautomation.ae/blog/the-benefits-of-glass-lifting-robots.php" >
 
 								<figure><img src="../images/blog/the-benefits-of-glass-lifting-robots.jpg" alt="glass lifting robots for rent"></figure>
 
@@ -415,29 +798,7 @@
 
 						</div>
 
-
-
-
-
-
-
-
-
-
-
 					</div>
-
-
-
-
-
-
-
-
-
-
-
-
 
 				</div>
 
@@ -487,7 +848,7 @@
 
 
 
-
+	<script src="js/script.js"></script>
 
 	<script src="js/custom.js"></script>
 	<script>

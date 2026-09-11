@@ -2,28 +2,28 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 <!--***************************************-->
 
-<section id="feeds">
+<!-- <section id="feeds">
   <div class="container-fluid">
     <div class="row">
       <div class="col-md-12">
         <h3><span><img src="images/feeds.png" class="img-responsive" alt="yesautomation"></span></h3>
         <div class="soc">
-          <a href="https://www.instagram.com/yes_machinery/?utm_source=ig_profile_share&igshid=rwb4cto40an5" target="blank" class="le"><i class="demo-icon icon-instagram">&#xe812;</i></a>
-          <a class="le" target="blank" href="https://www.linkedin.com/company/10544191/admin/"><i class="demo-icon icon-linkedin">&#xf0e1;</i></a>
-          <a class="le" target="blank" href="https://www.youtube.com/channel/UCP7740uadpBDFE2l9AU-a9w?view_as=subscriber"><i class="demo-icon icon-youtube">&#xf167;</i></a>
-          <a href="https://www.facebook.com/YES-Machinery-134659813550393/" class="le" target="blank"><i class="demo-icon icon-003-facebook">&#xe808;</i></a>
+          <a href="https://www.instagram.com/yes_automationuae/" target="blank" class="le"><i class="demo-icon icon-instagram">&#xe812;</i></a>
+          <a class="le" target="blank" href="https://www.linkedin.com/company/yes-automation/"><i class="demo-icon icon-linkedin">&#xf0e1;</i></a>
+          <a class="le" target="blank" href="https://www.youtube.com/@yesautomation4230"><i class="demo-icon icon-youtube">&#xf167;</i></a>
+          <a href="https://www.facebook.com/YES-Automation-109242957330326/" class="le" target="blank"><i class="demo-icon icon-003-facebook">&#xe808;</i></a>
 
         </div>
       </div>
     </div>
   </div>
 
-</section>
+</section> -->
 
 
 
 
-<section id="newsfeeds">
+<!-- <section id="newsfeeds">
   <div class="container-fluid">
 
     <div class="row">
@@ -57,8 +57,10 @@
             $des = substr($value['description'], 0, 300);
 
             $arr[$i] = array(
-              'image' => UPLOADS . "/news/" . $value['file'], 'date' => $date,
-              'title' => $value['title'], 'desc' => $value['description']
+              'image' => UPLOADS . "/news/" . $value['file'],
+              'date' => $date,
+              'title' => $value['title'],
+              'desc' => $value['description']
             );
             $i++;
           ?>
@@ -78,8 +80,7 @@
                       <h3>@yesautomation <span class="date"><?php echo $day . " " . $month_name . " " . $year; ?></span></h3>
                       <p>Dubai, United Arab Emirates - UAE</p>
                     </div>
-                  </div>
-                  <!-- <img src="images/news/news-1.jpg" alt="news"> -->
+                  </div> 
                   <img src="<?php echo UPLOADS . "/news/" . $value['file']; ?>" width="300">
                   <div class="min">
                     <img src="images/news/insta.png" class="lov" alt="news">
@@ -104,74 +105,7 @@
 
           <?php } ?>
 
-
-
-
-          <!-- 
-                      <a href="#" target="blank"><div class="item">
-                          <div class="container">
-                                <div class="column">
-                                  <div class="min">
-                                    <div class="ico">
-                                      <img src="images/news/icon.png" alt="news">
-                                    </div>
-                                    <div class="hed">
-                                      <h3>@yesautomatikon <span class="date">02th July 2020</span></h3>
-                                      <p>Dubai, United Arab Emirates - UAE</p>
-                                    </div>
-                                </div>          
-                                <img src="images/news/news-2.jpg" alt="news">
-                                <div class="min">
-                                  <img src="images/news/insta.png" class="lov" alt="news">
-                                  <div class="li">
-                                      <h3 class="like">13 likes</h3>
-                                    </div>
-                                  <div class="hedsc">
-                                    <h3>YES AUTOMATION</h3>
-                                      <p>Focused on Speciality Equipment Rentals. It can be a short term need or it can be where you are limited by a small budget. Why to buy when you can rent it from us. Give us a call and lets talk !!</p>
-                                      <p class="red">Read more on <img class="linked" src="images/linked-in.png" alt="news"></p>
-                                  </div>
-
-                                </div>
-
-                              </div>
-                              
-                          </div>
-                        </div>
-                      </a>
-
-                      <a href="#" target="blank"><div class="item">
-                          <div class="container">
-                              <div class="column">
-                                  <div class="min">
-                                    <div class="ico">
-                                      <img src="images/news/icon.png" alt="news">
-                                    </div>
-                                    <div class="hed">
-                                      <h3>@yesautomatikon <span class="date">25th June 2020</span></h3>
-                                      <p>Dubai, United Arab Emirates - UAE</p>
-                                    </div>
-                                </div>          
-                                <img src="images/news/news-3.jpg" alt="news">
-                                <div class="min">
-                                  <img src="images/news/insta.png" class="lov" alt="news">
-                                  <div class="li">
-                                      <h3 class="like">15 likes</h3>
-                                    </div>
-                                  <div class="hedsc">
-                                      <h3>YES AUTOMATION</h3>
-                                      <p>Focused on Speciality Equipment Rentals. It can be a short term need or it can be where you are limited by a small budget. Why to buy when you can rent it from us. Give us a call and lets talk !!</p>
-                                      <p class="red">Read more on <img class="linked" src="images/linked-in.png" alt="news"></p>
-                                  </div>
-
-                                </div>
-
-                              </div>
-
-                          </div>
-                        </div>
-                      </a>
-                          -->
+ 
 
 
         </div>
@@ -191,7 +125,7 @@
 
 
   </div>
-</section>
+</section> -->
 
 
 <input type="hidden" value="2" id="plus">
@@ -341,7 +275,7 @@
             pause: true,
             interval: false
           });
-          //window.location.replace("http://localhost/yes-l/news.php");
+          //window.location.replace("https://localhost/yes-l/news.php");
           window.location.href = "https://www.yesmachinery.ae/news.php";
         });
       } else {

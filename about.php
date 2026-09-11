@@ -26,7 +26,9 @@
 
 	<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
-
+  <!-- canonical -->
+  <link href="https://www.yesautomation.ae/about.php" rel="canonical">
+  <!--// canonical -->
 
 
 	<!-- <div class="whatssap"></div>
@@ -68,14 +70,15 @@
 
 					<p>The initial plan was to start with Kistler products for the rental business, however reciprocating to the market needs we soon expanded to other products, increasing our fleet diversity.</p>
 
-					<p>What we do best is to listen to your needs and offer the right solution. 
+					<p>What we do best is to listen to your needs and offer the right solution.
 						All our products and solutions are backed by a strong service team which
-						 supports you through the contract team. The service team is also available to help you execute the job if so desired by the client. </p>
+						supports you through the contract team. The service team is also available to help you execute the job if so desired by the client. </p>
 
 
 					<p>Our products will help you do your job smarter, automated and maximize your productivity. </p>
 
-					<p>To know how we do that, write to us on <a href="mailto:sales@yesautomation.ae" target="_blank"><span>sales@yesautomation.ae</span></a> or Call us on: <a href="tel:971502118507" target="_blank"><span>+971 50 211 8507</span></a> </p>
+					<p>To know how we do that, write to us on <a href="mailto:sales@yesautomation.ae" target="_blank"><span>sales@yesautomation.ae</span></a> or Call us on:
+					<a href="tel:971565388502" target="_blank"><span> +971 56 538 8502 </span></a> </p>
 				</div>
 
 			</div>
@@ -106,7 +109,7 @@
 
 
 	<?php include 'footer.php'; ?>
-
+	<script src="js/script.js"></script>
 
 	<script src="js/custom.js"></script>
 	<script>

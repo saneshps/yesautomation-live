@@ -219,7 +219,7 @@ By automating the rotation of the workpieces, you can be sure that the high-qual
 
 				  <h1>Welding Rotators: Basics & Benefits</h1>
 
-	              <img src="../images/blog/welding-rotators-basics-benefits.jpg" alt="" >
+	              <img src="../images/blog/welding-rotators-basics-benefits.jpg" alt="Welding Rotators Basics Benefits" >
 
 	             
 

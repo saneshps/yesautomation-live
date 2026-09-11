@@ -31,6 +31,10 @@
   <link href="slider/skdslider.css" rel="stylesheet">
 
   <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  
+    <!-- canonical -->
+  <link href="https://www.yesautomation.ae/block-cutters.php" rel="canonical">
+  <!--// canonical -->
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-187454492-3"></script>
@@ -113,9 +117,9 @@
 
               <h4>Reach Our Expert</h4>
 
-              <img src="images/lal.png" class="img-responsive" style="margin: auto;" alt="Yes Automation">
+              <img src="images/AMARNATH.jpg" class="img-responsive" style="width: 150px; border-radius: 50%; margin:auto;" alt="Yes Automation">
 
-              <h6>Naveen Lal</h6>
+              <h6>Amarnath</h6>
 
               <p><a href="mailto:sales@yesautomation.ae">sales@yesautomation.ae</a></p>
 
@@ -851,7 +855,7 @@
     });
   </script>
 
-
+  <script src="js/script.js"></script>
 
 
 

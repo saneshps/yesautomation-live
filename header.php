@@ -9,9 +9,9 @@
          <div class="container-fluid">
              <div class="row">
                  <div class="col-md-2 col-sm-4 col-xs-8">
-                     <a class="des" href="http://yesautomation.ae"><img src="images/logo.png" alt="logo" class="logo"></a>
-                     <a class="mob" href="http://yesautomation.ae"><img src="images/logo-mob.png" alt="logo" class="logo"></a>
-                     <!-- <a class="privacy-logo" href="http://yesautomation.ae/"><img src="images/logo-gry.png" class="logo"></a>-->
+                     <a class="des" href="https://yesautomation.ae"><img src="images/logo.png" alt="logo" class="logo"></a>
+                     <a class="mob" href="https://yesautomation.ae"><img src="images/logo-mob.png" alt="logo" class="logo"></a>
+                     <!-- <a class="privacy-logo" href="https://yesautomation.ae/"><img src="images/logo-gry.png" class="logo"></a>-->
                  </div>
                  <div class="col-md-10 col-sm-8 col-xs-4 high">
 
@@ -23,7 +23,9 @@
                          <a href="https://www.facebook.com/YES-Automation-109242957330326/" class="le" target="blank"><i class="demo-icon icon-003-facebook">&#xe808;</i></a>
 
 
-                         <a <?php if ($page == "news") { ?>class="active" <?php } ?> href="news.php">News </a>/ <a <?php if ($page == "blog") { ?>class="active" <?php } ?> href="blogs.php" target="blank">Blogs</a> / <a <?php if ($page == "contact") { ?>class="active" <?php } ?>href="contact.php" class="small-scr">Contact</a>
+                         <!-- <a <?php if ($page == "news") { ?>class="active" <?php } ?> href="news.php">News </a>/  -->
+                         <a <?php if ($page == "blog") { ?>class="active" <?php } ?> href="blogs.php">Blogs</a> /
+                          <a <?php if ($page == "contact") { ?>class="active" <?php } ?>href="contact.php" class="small-scr">Contact</a>
 
 
 
@@ -54,6 +56,7 @@
                                          <li><a href='stud-welders.php'>Stud Welders</a>
 
                                          </li>
+                                         <li><a href='pressure-washers.php'> Pressure Washers </a> </li>
 
                                          <li><a href='cleaning-machines.php'>Cleaning Machines</a>
                                              <ul>
@@ -110,7 +113,7 @@
 
                                  <li class="hiden"><a <?php if ($page == "contact") { ?>class="active" <?php } ?>href="contact.php">Contact </a></li>
 
-                                 <li><a <?php if ($page == "home") { ?>class="active2 hea-er" <?php } ?>href="http://yesautomation.ae"><i class="demo-icon icon-house-black-silhouette-without-door">&#xe810;</i></a></li>
+                                 <li><a <?php if ($page == "home") { ?>class="active2 hea-er" <?php } ?>href="https://yesautomation.ae"><i class="demo-icon icon-house-black-silhouette-without-door">&#xe810;</i></a></li>
 
                              </ul>
                          </div>
