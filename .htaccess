@@ -3,18 +3,28 @@ php_value memory_limit 256M
 php_value max_execution_time 300
 </IfModule>
 
+# cPanel PHP handlers — skip on local so Laragon can run PHP
+<If "! %{HTTP_HOST} =~ m#localhost|127\.0\.0\.1|\.local$#">
 AddHandler application/x-httpd-ea-php56 .php
+</If>
 
+<If "%{HTTP_HOST} =~ m#localhost|127\.0\.0\.1#">
+ErrorDocument 404 /yesautomation-git-new/404.php
+</If>
+<ElseIf "%{HTTP_HOST} =~ m#\.local$#">
+ErrorDocument 404 /404.php
+</ElseIf>
+<Else>
 ErrorDocument 404 https://www.yesautomation.ae/404.php
+</Else>
 
 RewriteEngine On
-# First rewrite to HTTPS:
-# Don't put www. here. If it is already there it will be included, if not
-# the subsequent rule will catch it.
 RewriteCond %{HTTPS} off
 RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 # Now, rewrite any request to the wrong domain to use www.
-# [NC] is a case-insensitive match
+# Skip www rewrite on local
+RewriteCond %{HTTP_HOST} !^(localhost|127\.0\.0\.1)(:[0-9]+)?$ [NC]
+RewriteCond %{HTTP_HOST} !\.local$ [NC]
 RewriteCond %{HTTP_HOST} !^www\. [NC]
 RewriteRule .* https://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
@@ -115,7 +125,9 @@ allow from all
 
 # php -- BEGIN cPanel-generated handler, do not edit
 # Set the “ea-php74” package as the default “PHP” programming language.
+<If "! %{HTTP_HOST} =~ m#localhost|127\.0\.0\.1|\.local$#">
 <IfModule mime_module>
   AddHandler application/x-httpd-ea-php74___lsphp .php .php7 .phtml
 </IfModule>
+</If>
 # php -- END cPanel-generated handler, do not edit
