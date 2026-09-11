@@ -1,3 +1,4 @@
+<?php http_response_code(404); ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -59,7 +60,7 @@
 					<div style="text-align:center;">
 						<img src="./images/404.jpg" width="40%" />
 						<div style="margin-bottom: 10px ;">
-							<a href="https://yesautomation.ae">Back to homepage</a>
+							<a href="index.php">Back to homepage</a>
 						</div>
 					</div>
 				</div>

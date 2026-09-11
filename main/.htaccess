@@ -3,18 +3,31 @@ php_value memory_limit 256M
 php_value max_execution_time 300
 </IfModule>
 
-AddHandler application/x-httpd-ea-php56 .php
+# AddHandler application/x-httpd-ea-php56 .php
 
-ErrorDocument 404 https://www.yesautomation.ae/404.php
+ErrorDocument 404 /404.php
 
 RewriteEngine On
-# First rewrite to HTTPS:
-# Don't put www. here. If it is already there it will be included, if not
-# the subsequent rule will catch it.
+
+RewriteCond %{HTTP_HOST} localhost [NC]
+RewriteCond %{REQUEST_URI} ^/yesautomation-git-new/(.*)$
+RewriteRule ^ http://yesautomation-git-new.local/%1 [R=302,L]
+
+RewriteCond %{HTTP_HOST} ^www\.localhost [NC]
+RewriteRule ^(.*)$ http://yesautomation-git-new.local/$1 [R=302,L]
+
+# Keep HTTPS/www redirects on the live domain only
+RewriteCond %{HTTP_HOST} !localhost [NC]
+RewriteCond %{HTTP_HOST} !^127\.0\.0\.1$
+RewriteCond %{HTTP_HOST} !\.local$ [NC]
+RewriteCond %{HTTP_HOST} !\.test$ [NC]
 RewriteCond %{HTTPS} off
 RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
-# Now, rewrite any request to the wrong domain to use www.
-# [NC] is a case-insensitive match
+
+RewriteCond %{HTTP_HOST} !localhost [NC]
+RewriteCond %{HTTP_HOST} !^127\.0\.0\.1$
+RewriteCond %{HTTP_HOST} !\.local$ [NC]
+RewriteCond %{HTTP_HOST} !\.test$ [NC]
 RewriteCond %{HTTP_HOST} !^www\. [NC]
 RewriteRule .* https://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
@@ -61,7 +74,9 @@ RewriteRule ^(.*)$ /404.php [L]
 
 # php -- BEGIN cPanel-generated handler, do not edit
 # Set the “ea-php74” package as the default “PHP” programming language.
+<If "%{HTTP_HOST} =~ /yesautomation\.ae$/i">
 <IfModule mime_module>
   AddHandler application/x-httpd-ea-php74___lsphp .php .php7 .phtml
 </IfModule>
+</If>
 # php -- END cPanel-generated handler, do not edit
