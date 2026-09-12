@@ -11,7 +11,7 @@ $arrQues = getQuestions($model);
 <div id="modalOne" class="modal-quote">
     <div class="modal-content">
         <div class="contact-form">
-            <a class="close">&times;</a>
+            <a href="javascript:void(0);" class="close" aria-label="Close quote request">&times;</a>
             <!-- <form action="/">
             <h2>Contact Us</h2>
             <div>
@@ -135,6 +135,18 @@ $arrQues = getQuestions($model);
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css">
 
 <script>
+    (function () {
+        var modal = document.getElementById("modalOne");
+        var closeBtn = modal ? modal.querySelector(".close") : null;
+        if (closeBtn && modal) {
+            closeBtn.addEventListener("click", function (e) {
+                e.preventDefault();
+                e.stopPropagation();
+                modal.style.display = "none";
+            });
+        }
+    })();
+
     var model = "<?= $model ?>";
     loadQuestion(model);
 

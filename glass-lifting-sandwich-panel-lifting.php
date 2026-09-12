@@ -428,6 +428,12 @@
 
 
     <?php include 'footer.php'; ?>
+
+    <?php $model = 'Glass Vacuum Lifter';
+    $catoptions = ['Glass Vacuum Lifter', 'Panel Vacuum Lifter'];
+    include_once('quote-request.php');
+    ?>
+
     <script src="slider/skdslider.min.js"></script>
     <script>
     let modalBtns = [...document.querySelectorAll(".button-q")];
@@ -437,18 +443,18 @@
             document.getElementById(modal).style.display = "block";
         };
     });
-    let closeBtns = [...document.querySelectorAll(".close")];
-    closeBtns.forEach(function(btn) {
-        btn.onclick = function() {
-            let modal = btn.closest(".modal-quote");
-            modal.style.display = "none";
-        };
-    });
-    window.onclick = function(event) {
-        if (event.target.className === "modal-quote") {
+    document.addEventListener("click", function(event) {
+        let closeBtn = event.target.closest ? event.target.closest(".close") : null;
+        if (closeBtn) {
+            let modal = closeBtn.closest(".modal-quote");
+            if (modal) {
+                modal.style.display = "none";
+            }
+        }
+        if (event.target.classList && event.target.classList.contains("modal-quote")) {
             event.target.style.display = "none";
         }
-    };
+    });
     </script>
 
     <script>
@@ -994,15 +1000,6 @@
     </script>
 
     <script src="js/script.js"></script>
-
-
-
-
-    <?php $model = 'Glass Vacuum Lifter';
-  $catoptions = ['Glass Vacuum Lifter', 'Panel Vacuum Lifter'];
-
-  include_once('quote-request.php');
-  ?>
 
 
 
