@@ -17,7 +17,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-
+  <link rel="canonical" href="https://www.yesautomation.ae/spider-crane-rental-uae.php" />
 
 
   <link rel="stylesheet" href="main/bootstrap.min.css">
@@ -103,7 +103,7 @@
 
       <div class="cap-one">
 
-        <h1> Pipe Beveling </h1>
+        <h1> Spider Crane </h1>
 
 
       </div>
@@ -193,25 +193,13 @@
 
 
 
-              <a href="pdf/208B_EM_TechSpec.pdf" class="box" download><i class="demo-icon icon-pdf">&#xe811;</i> Tritool 208B</a>
+              <a href="pdf/C10e_brochure_EN_WEB_892e72f267-compressed.pdf" class="box" download><i class="demo-icon icon-pdf">&#xe811;</i> Spider Crane C10e</a>
 
-              <a href="pdf/600_Series-LR.pdf" class="box" download><i class="demo-icon icon-pdf">&#xe811;</i> Tritool 600 series</a>
-
-              <a href="pdf/PipeLCat3.pdf" class="box" download><i class="demo-icon icon-pdf">&#xe811;</i> Tritool pipeline</a>
+              <a href="pdf/C10e_Lasttabellen_1_ba7afbea38-compressed.pdf" class="box" download><i class="demo-icon icon-pdf">&#xe811;</i> Spider Crane C10e Loaddiagram </a>
 
             </div>
 
-
-
-            <div id="case">
-
-
-
-              <a href="#">
-                <h2>Case Study</h2>
-              </a>
-
-            </div>
+  
 
 
 
@@ -459,8 +447,82 @@ spaces effortlessly.  </p>
           </ul>
              </div>
           </div>
-
-
+          
+          <!-- Specifications -->
+          <div class="row top">
+              <div class="col-md-12">
+                <div class="crane-specs-wrap">
+                  <h2>Specifications</h2>
+                  <dl class="crane-specs">
+                    <div class="crane-spec">
+                      <dt>Capacity</dt>
+                      <dd>4,000 kg</dd>
+                    </div>
+                    <div class="crane-spec">
+                      <dt>Capacity at max. outreach</dt>
+                      <dd>209 kg</dd>
+                    </div>
+                    <div class="crane-spec">
+                      <dt>Winch capacity</dt>
+                      <dd>4,000 kg</dd>
+                    </div>
+                    <div class="crane-spec">
+                      <dt>Lifting height incl. jib</dt>
+                      <dd>22 meters</dd>
+                    </div>
+                    <div class="crane-spec">
+                      <dt>Max. outreach incl. jib</dt>
+                      <dd>19.8 m</dd>
+                    </div>
+                    <div class="crane-spec">
+                      <dt>Jib length</dt>
+                      <dd>5 m</dd>
+                    </div>
+                    <div class="crane-spec">
+                      <dt>Max. outreach excl. jib</dt>
+                      <dd>13.7 m</dd>
+                    </div>
+                    <div class="crane-spec">
+                      <dt>Boom angle</dt>
+                      <dd>&minus;5&deg; to 83&deg;</dd>
+                    </div>
+                    <div class="crane-spec">
+                      <dt>Incline angle</dt>
+                      <dd>20&deg;</dd>
+                    </div>
+                    <div class="crane-spec">
+                      <dt>Slewing range</dt>
+                      <dd>Endless</dd>
+                    </div>
+                    <div class="crane-spec">
+                      <dt>Dimensions excl. options</dt>
+                      <dd>3.93 &times; 0.80 &times; 1.97 m</dd>
+                    </div>
+                    <div class="crane-spec">
+                      <dt>Dimensions incl. options</dt>
+                      <dd>4.15 &times; 0.80 &times; 2.07 m</dd>
+                    </div>
+                    <div class="crane-spec">
+                      <dt>Total weight incl. options</dt>
+                      <dd>4,700 kg</dd>
+                    </div>
+                    <div class="crane-spec">
+                      <dt>Total weight excl. options</dt>
+                      <dd>3,260 kg</dd>
+                    </div>
+                    <div class="crane-spec">
+                      <dt>Ground pressure</dt>
+                      <dd>0.72 kg/cm&sup2;</dd>
+                    </div>
+                    <div class="crane-spec">
+                      <dt>Charging options</dt>
+                      <dd>230 V</dd>
+                    </div>
+                  </dl>
+                </div>
+              </div>
+          </div>
+          <!-- Specifications -->
 
           <div class="row top">
 

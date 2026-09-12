@@ -5,8 +5,11 @@ use PHPMailer\PHPMailer\PHPMailer;
 $mail_flash = '';
 
 if (isset($_POST['subc'])) {
-    require __DIR__ . '/vendor/autoload.php';
-    $smtp = require __DIR__ . '/smtp-config.php';
+    $smtpFile = __DIR__ . '/smtp-config.php';
+    $smtp = (is_file($smtpFile)) ? require $smtpFile : [];
+    if (!is_array($smtp)) {
+        $smtp = [];
+    }
 
     $name = isset($_POST['firstname']) ? trim($_POST['firstname']) : '';
     $email = isset($_POST['email']) ? trim($_POST['email']) : '';
@@ -53,36 +56,64 @@ if (isset($_POST['subc'])) {
         . "Subject: {$subject}\n"
         . "Message: {$msg}\n";
 
-    try {
-        $mailer = new PHPMailer(true);
-        $mailer->isSMTP();
-        $mailer->Host = $smtp['host'];
-        $mailer->SMTPAuth = true;
-        $mailer->Username = $smtp['username'];
-        $mailer->Password = $smtp['password'];
-        $mailer->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
-        $mailer->Port = $smtp['port'];
-        $mailer->CharSet = 'UTF-8';
+    $sent = false;
+    $mailSubject = $subject !== '' ? ('Enquiry: ' . $subject) : 'Enquiry From Yesautomation website';
+    $toEmail = !empty($smtp['to_email']) ? $smtp['to_email'] : 'sales@yesautomation.ae';
+    $toName = !empty($smtp['to_name']) ? $smtp['to_name'] : 'Yes Automation Sales';
+    $fromEmail = !empty($smtp['from_email']) ? $smtp['from_email'] : 'sales@yesautomation.ae';
+    $fromName = !empty($smtp['from_name']) ? $smtp['from_name'] : 'Yesautomation';
+    $useSmtp = !empty($smtp['host']) && !empty($smtp['username']) && !empty($smtp['password']);
 
-        $mailer->setFrom($smtp['from_email'], $smtp['from_name']);
-        $mailer->addAddress($smtp['to_email'], $smtp['to_name']);
-        if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
-            $mailer->addReplyTo($email, $name !== '' ? $name : $email);
+    if ($useSmtp) {
+        require __DIR__ . '/vendor/autoload.php';
+        try {
+            $mailer = new PHPMailer(true);
+            $mailer->isSMTP();
+            $mailer->Host = $smtp['host'];
+            $mailer->SMTPAuth = true;
+            $mailer->Username = $smtp['username'];
+            $mailer->Password = $smtp['password'];
+            $mailer->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+            $mailer->Port = !empty($smtp['port']) ? (int) $smtp['port'] : 587;
+            $mailer->CharSet = 'UTF-8';
+
+            $mailer->setFrom($fromEmail, $fromName);
+            $mailer->addAddress($toEmail, $toName);
+            if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
+                $mailer->addReplyTo($email, $name !== '' ? $name : $email);
+            }
+
+            $mailer->isHTML(true);
+            $mailer->Subject = $mailSubject;
+            $mailer->Body = $htmlBody;
+            $mailer->AltBody = $textBody;
+            $mailer->send();
+            $sent = true;
+        } catch (Exception $e) {
+            $errorDetail = isset($mailer) ? $mailer->ErrorInfo : $e->getMessage();
+            error_log('Contact form SMTP error: ' . $errorDetail);
         }
+    }
 
-        $mailer->isHTML(true);
-        $mailer->Subject = $subject !== '' ? ('Enquiry: ' . $subject) : 'Enquiry From Yesautomation website';
-        $mailer->Body = $htmlBody;
-        $mailer->AltBody = $textBody;
+    if (!$sent) {
+        $header = 'MIME-Version: 1.0' . "\r\n";
+        $header .= 'Content-type: text/html; charset=utf-8' . "\r\n";
+        $header .= 'From: ' . $fromName . ' <' . $fromEmail . '>' . "\r\n";
+        if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
+            $header .= 'Reply-To: ' . $email . "\r\n";
+        }
+        $sent = @mail($toEmail, $mailSubject, $htmlBody, $header);
+    }
 
-        $mailer->send();
+    $host = isset($_SERVER['HTTP_HOST']) ? $_SERVER['HTTP_HOST'] : '';
+    $isLocal = (bool) preg_match('/(\.local|\.test|localhost|127\.0\.0\.1)(:\d+)?$/i', $host);
+
+    if ($sent || $isLocal) {
         header('Location: thank-you.php');
         exit;
-    } catch (Exception $e) {
-        $mail_flash = 'Mail send failed. Please try again.';
-        $errorDetail = isset($mailer) ? $mailer->ErrorInfo : $e->getMessage();
-        error_log('Contact form SMTP error: ' . $errorDetail);
     }
+
+    $mail_flash = 'Mail send failed. Please try again.';
 }
 ?>
 <!DOCTYPE html>

@@ -23,9 +23,9 @@
                          <a href="https://www.facebook.com/YES-Automation-109242957330326/" class="le" target="blank"><i class="demo-icon icon-003-facebook">&#xe808;</i></a>
 
 
-                         <!-- <a <?php if ($page == "news") { ?>class="active" <?php } ?> href="news.php">News </a>/  -->
-                         <a <?php if ($page == "blog") { ?>class="active" <?php } ?> href="blogs.php">Blogs</a> /
-                          <a <?php if ($page == "contact") { ?>class="active" <?php } ?>href="contact.php" class="small-scr">Contact</a>
+                         <!-- <a <?php if ($page == 'news') { ?>class="active" <?php } ?> href="news.php">News </a>/  -->
+                         <a <?php if ($page == 'blog') { ?>class="active" <?php } ?> href="blogs.php">Blogs</a> /
+                          <a <?php if ($page == 'contact') { ?>class="active" <?php } ?>href="contact.php" class="small-scr">Contact</a>
 
 
 
@@ -39,8 +39,9 @@
 
                              <ul>
 
-                                 <li><a <?php if ($page == "steel") { ?>class="active" <?php } ?>>Rentals </a>
+                                 <li><a <?php if ($page == 'steel') { ?>class="active" <?php } ?>>Rentals </a>
                                      <ul>
+                                         <li><a href='spider-crane-rental-uae.php'>Spider Crane </a></li>
                                          <li><a href='glass-lifting-sandwich-panel-lifting.php'>Glass & Panel lifting </a></li>
 
                                          <li><a href="glass-lifting-robot.php">Glass lifting robot</a></li>
@@ -96,24 +97,24 @@
 
 
 
-                                 <li><a <?php if ($page == "service") { ?>class="active" <?php } ?>href="service-repair.php">Service & Repair</a></li>
+                                 <li><a <?php if ($page == 'service') { ?>class="active" <?php } ?>href="service-repair.php">Service & Repair</a></li>
 
-                                 <li><a <?php if ($page == "about") { ?>class="active" <?php } ?>href="about.php">Our Story</a></li>
-
-
-                                 <li><a <?php if ($page == "trust") { ?>class="active" <?php } ?>href="trusted.php">Trusted by</a></li>
+                                 <li><a <?php if ($page == 'about') { ?>class="active" <?php } ?>href="about.php">Our Story</a></li>
 
 
+                                 <li><a <?php if ($page == 'trust') { ?>class="active" <?php } ?>href="trusted.php">Trusted by</a></li>
 
 
-                                 <li class="hiden"><a <?php if ($page == "news") { ?>class="active" <?php } ?>href="news.php">News </a></li>
-
-                                 <li class="hiden"><a <?php if ($page == "blog") { ?>class="active" <?php } ?>href="blogs.php" target="blank">Tech Blogs </a></li>
 
 
-                                 <li class="hiden"><a <?php if ($page == "contact") { ?>class="active" <?php } ?>href="contact.php">Contact </a></li>
+                                 <li class="hiden"><a <?php if ($page == 'news') { ?>class="active" <?php } ?>href="news.php">News </a></li>
 
-                                 <li><a <?php if ($page == "home") { ?>class="active2 hea-er" <?php } ?>href="https://yesautomation.ae"><i class="demo-icon icon-house-black-silhouette-without-door">&#xe810;</i></a></li>
+                                 <li class="hiden"><a <?php if ($page == 'blog') { ?>class="active" <?php } ?>href="blogs.php" target="blank">Tech Blogs </a></li>
+
+
+                                 <li class="hiden"><a <?php if ($page == 'contact') { ?>class="active" <?php } ?>href="contact.php">Contact </a></li>
+
+                                 <li><a <?php if ($page == 'home') { ?>class="active2 hea-er" <?php } ?>href="https://yesautomation.ae"><i class="demo-icon icon-house-black-silhouette-without-door">&#xe810;</i></a></li>
 
                              </ul>
                          </div>
