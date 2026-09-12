@@ -1,3 +1,102 @@
+<?php
+use PHPMailer\PHPMailer\Exception;
+use PHPMailer\PHPMailer\PHPMailer;
+
+$mail_flash = '';
+
+if (isset($_POST['Submit'])) {
+  $smtpFile = __DIR__ . '/smtp-config.php';
+  $smtp = (is_file($smtpFile)) ? require $smtpFile : [];
+  if (!is_array($smtp)) {
+    $smtp = [];
+  }
+
+  $product = isset($_POST['pn']) ? trim($_POST['pn']) : 'Spider Crane';
+  $email = isset($_POST['email']) ? trim($_POST['email']) : '';
+  $mobile = isset($_POST['mobile']) ? trim($_POST['mobile']) : '';
+
+  $safeProduct = htmlspecialchars($product, ENT_QUOTES, 'UTF-8');
+  $safeEmail = htmlspecialchars($email, ENT_QUOTES, 'UTF-8');
+  $safeMobile = htmlspecialchars($mobile, ENT_QUOTES, 'UTF-8');
+
+  $subject = 'Express Interests - ' . $product;
+  $msg = 'You have received an express interest of the product ' . $product;
+
+  $htmlBody = '
+<div style="background:#e5e5e5; padding:2% 6%">
+<div style="padding:15px; background:#e7e7e7;text-align: center;  border-bottom:solid 5px #9dc33b">
+<div><img src="https://www.yesautomation.ae/images/logo.png"  alt="Yesautomation" /></div>
+</div>
+<div style="margin-top: -6%;">
+<div style="padding:15px 15px 35px 15px; background:white;text-align: center; ">
+<h1>Express Interests of ' . $safeProduct . '</h1>
+<div style="padding-bottom:5px; height: 30px;">
+<div > E-Mail:  <a style="color:#999">' . $safeEmail . '</a></div>
+</div>
+<div style="padding-bottom:5px; height: 30px;">
+<div > Phone:  <a style="color:#999">' . $safeMobile . '</a></div>
+</div>
+<div style="padding-bottom:5px; height: 30px;">
+<div > Subject:  <a style="color:#999">' . htmlspecialchars($subject, ENT_QUOTES, 'UTF-8') . '</a></div>
+</div>
+<div style="padding-bottom:5px; height: 30px;">
+<div> Message:  <a style="color:#999">' . htmlspecialchars($msg, ENT_QUOTES, 'UTF-8') . '</a></div>
+</div>
+</div>
+</div>';
+
+  $textBody = "Express Interests of {$product}\n"
+    . "E-Mail: {$email}\n"
+    . "Phone: {$mobile}\n"
+    . "Subject: {$subject}\n"
+    . "Message: {$msg}\n";
+
+  $toEmail = 'saneshbigleap@gmail.com';
+  $toName = !empty($smtp['to_name']) ? $smtp['to_name'] : 'Yes Automation Sales';
+  $fromEmail = !empty($smtp['from_email']) ? $smtp['from_email'] : 'saneshbigleap@gmail.com';
+  $fromName = !empty($smtp['from_name']) ? $smtp['from_name'] : 'YES Automation Contact';
+  $smtpUser = !empty($smtp['username']) ? $smtp['username'] : 'saneshbigleap@gmail.com';
+  $smtpPass = !empty($smtp['password']) ? $smtp['password'] : '';
+  $sent = false;
+
+  if ($smtpPass !== '') {
+    require __DIR__ . '/vendor/autoload.php';
+    try {
+      $mailer = new PHPMailer(true);
+      $mailer->isSMTP();
+      $mailer->Host = 'smtp.gmail.com';
+      $mailer->SMTPAuth = true;
+      $mailer->Username = $smtpUser;
+      $mailer->Password = $smtpPass;
+      $mailer->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+      $mailer->Port = 587;
+      $mailer->CharSet = 'UTF-8';
+      $mailer->setFrom($fromEmail, $fromName);
+      $mailer->addAddress($toEmail, $toName);
+      if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        $mailer->addReplyTo($email, $email);
+      }
+      $mailer->isHTML(true);
+      $mailer->Subject = $subject;
+      $mailer->Body = $htmlBody;
+      $mailer->AltBody = $textBody;
+      $mailer->send();
+      $sent = true;
+    } catch (Exception $e) {
+      $errorDetail = isset($mailer) ? $mailer->ErrorInfo : $e->getMessage();
+      error_log('Spider crane express interest SMTP error: ' . $errorDetail);
+      $mail_flash = 'Mail send failed. Please try again.';
+    }
+  } else {
+    $mail_flash = 'Mail send failed. Please try again.';
+  }
+
+  if ($sent) {
+    header('Location: thank-you.php');
+    exit;
+  }
+}
+?>
 <!DOCTYPE html>
 
 <html lang="en">
@@ -132,7 +231,7 @@
 
               <img src="images/Shafna-Ashraf.png" class="img-responsive" style="width: 150px; border-radius: 50%; margin:auto;" alt="Yes Automation">
 
-<h6>Shafna Ashraf</h6>
+              <h6>Shafna Ashraf</h6>
 
               <p><a href="mailto:sales@yesautomation.ae">sales@yesautomation.ae</a></p>
 
@@ -149,9 +248,9 @@
 
               <h3>EXPRESS INTEREST</h3>
 
-              <form method="post" action="form.php">
+              <form method="post" action="">
 
-                <input type="hidden" name="pn" id="pn" value="Cleaning Robot">
+                <input type="hidden" name="pn" id="pn" value="Spider Crane">
 
                 <div class="col-md-12 col-sm-12 padd">
 
@@ -176,6 +275,10 @@
                   <input type="submit" value="SEND" name="Submit">
 
                 </div>
+
+                <?php if (!empty($mail_flash)) { ?>
+                  <p style="color:#e53935;margin:0 0 10px;font-size:13px;"><?php echo htmlspecialchars($mail_flash, ENT_QUOTES, 'UTF-8'); ?></p>
+                <?php } ?>
 
               </form>
 

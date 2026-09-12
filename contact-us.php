@@ -125,6 +125,7 @@ if (isset($_POST['subc'])) {
 	<meta name="description" content="Get in touch with the leading machinery equipment Rental company in UAE. For more details contact yesautomation.ae and Give us a call, let's talk.">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="canonical" href="https://www.yesautomation.ae/contact-us.php" />
 
 	<link rel="stylesheet" href="main/bootstrap.min.css">
 	<link rel="stylesheet" href="main/layout.css">
