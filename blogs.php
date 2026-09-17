@@ -89,6 +89,16 @@
 					    
 					    <div class="col-md-4 col-sm-6 col-xs-12">
 
+							<a href="blog/spider-crane-rental-uae-construction-projects.php">
+
+								<figure><img src="../images/blog/why-spider-crane-rental-is-a-smart-choice-for-uae-construction-projects.webp" alt="why spider crane rental is a smart choice for uae construction projects"></figure>
+
+								<h2>  Why Is Spider Crane Rental a Smart Choice for UAE Construction Projects ? </h2>
+							</a>
+						</div>
+					    
+					    <div class="col-md-4 col-sm-6 col-xs-12">
+
 							<a href="blog/solar-panel-installation-vacuum-lifters.php">
 
 								<figure><img src="../images/blog/solar-panel-installation-vacuum-lifters.webp" alt="solar-panel-installation-vacuum-lifters"></figure>
